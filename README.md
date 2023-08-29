@@ -1,26 +1,27 @@
 
 # kali linux commands
 
-`pwd` - prints current working directry, uses to redirect to open a file
+- prints current working directry, uses to redirect to open a file - `pwd`  
 
-`ls` - files in the folder
+- files in the folder - `ls`
 
-`cd` - open a folder
+- open a folder - `cd`
 
-`..` - to go back to the previous folder
+- to go back to the previous folder - `..`  
 
-`man` - prints descrption
+- prints descrption of a function - `man`   
 
-`rm -rf` -  delete a file 
+-  Delete a file `rm -rf` 
 
-`sudo apt-get update` - used to update like (winget in windows)  
+- used to update like (winget in windows) - `sudo apt-get update` 
 
-`sudo apt upgrade` - upgrade kali linux
+- upgrade kali linux - `sudo apt upgrade` 
 
-`sudo apt update` - update kali linux
+- update kali linux - `sudo apt update`  
 
+<h3 align="center"> .. </h3>  
 
-### check IP address  
+## check IP address
 
 
 - to check the information of the target website  
