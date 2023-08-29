@@ -39,7 +39,7 @@ http://toolbar.netcraft.com/site_report?url=
 ```
 https://www.robtex.com/ 
 ```  
-- Using bing.com, search for ip: `[target ip]`
+- Using bing.com, search for `ip: [target ip]`
 
 
 
