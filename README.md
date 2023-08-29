@@ -3,11 +3,11 @@
 
 - prints current working directry, uses to redirect to open a file - `pwd`  
 
-- files in the folder - `ls`
+- list all files - `ls`
 
 - open a folder - `cd`
 
-- to go back to the previous folder - `..`  
+- previous folder - `..`  
 
 - prints descrption of a function - `man`   
 
@@ -19,7 +19,7 @@
 
 - update kali linux - `sudo apt update`  
 
-<h3 align="center"> .. </h3>  
+<h3 align="center"> ... </h3>  
 
 ## check IP address
 
