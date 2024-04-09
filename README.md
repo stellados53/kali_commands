@@ -17,7 +17,9 @@
 
 - upgrade kali linux - `sudo apt upgrade` 
 
-- update kali linux - `sudo apt update`  
+- update kali linux - `sudo apt update`
+
+- run 2 commands concurently -  `ls;pwd`
 
 <h3 align="center"> ... </h3>  
 
