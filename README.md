@@ -76,7 +76,7 @@ nc -vv -l -p 8080
 > 
 > 8080 = port number.
 
-> __low__ - in searchbox __END WITH ";" AND RUN THE COMMAND ACCORDING TO THE WEBSITE OS.MOST IMPORTANT IF THE IP IS 192.168.11.129, SUBTRACT THE LAST NUMBER -1 THAT IS 192.168.11.128__
+> __low__ - in searchbox END WITH ";" AND RUN THE COMMAND ACCORDING TO THE WEBSITE OS.MOST IMPORTANT IF THE IP IS 192.168.11.129, SUBTRACT THE LAST NUMBER -1 THAT IS 192.168.11.128.
 >
 > __medium__ - it cannot run two commands using ";" so we use "|" for the exploit.
 >
