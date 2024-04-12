@@ -48,11 +48,11 @@ weevely generate 123456 /root/shell.php
 - now from the terminal we can open the backdoor that is  `cd ..` to get back and then we can access as we want.
 - burpsuite is used to interpt the website being executed with the help of proxy.
 
-> low - any file can be uploaded i.e., shell.php
+> __low__ - any file can be uploaded i.e., shell.php
 >
-> medium - we remame the file from shell.php to shell.jepg i.e., shell.jpeg and upload it using bruiteforce by changing the file type to php.
+> __medium__ - we remame the file from shell.php to shell.jepg i.e., shell.jpeg and upload it using bruiteforce by changing the file type to php.
 >
-> high - we change the file type to shell.php.jpeg and upload and then expoit.
+> __high__ - we change the file type to shell.php.jpeg and upload and then expoit.
 
 
 <h3 align="center"> ... </h3> 
@@ -76,8 +76,8 @@ nc -vv -l -p 8080
 > 
 > 8080 = port number.
 
-> low - in searchbox __END WITH ";" AND RUN THE COMMAND ACCORDING TO THE WEBSITE OS.MOST IMPORTANT IF THE IP IS 192.168.11.129, SUBTRACT THE LAST NUMBER -1 THAT IS 192.168.11.128__
+> __low__ - in searchbox __END WITH ";" AND RUN THE COMMAND ACCORDING TO THE WEBSITE OS.MOST IMPORTANT IF THE IP IS 192.168.11.129, SUBTRACT THE LAST NUMBER -1 THAT IS 192.168.11.128__
 >
-> medium - it cannot run two commands using ";" so we use "|" for the exploit.
+> __medium__ - it cannot run two commands using ";" so we use "|" for the exploit.
 >
-> high is not even possible
+> __high__ is not even possible
