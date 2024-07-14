@@ -3,12 +3,13 @@
 
 - prints current working directry, uses to redirect to open a file - `pwd`  
 - list all files - `ls`
-- list of all files in the directory with details - `ls -la`
+- list of all files in the directory with details - `ls -l`
 - open a folder - `cd`
 - previous folder - `..`  
 - prints descrption of a function - `man`
+- create a file directory `mkdir (filename)`
 - copy paste a file or folder `cp (from filelocation) (to filelocation)`  
--  Delete a file `rm -rf` 
+- Delete a file `rm -rf` 
 - used to update like (winget in windows) - `sudo apt-get update` 
 - upgrade kali linux - `sudo apt upgrade` 
 - update kali linux - `sudo apt update`
