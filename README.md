@@ -6,7 +6,8 @@
 - list of all files in the directory with details - `ls -la`
 - open a folder - `cd`
 - previous folder - `..`  
-- prints descrption of a function - `man`   
+- prints descrption of a function - `man`
+- copy paste a file or folder `cp (from filelocation) (to filelocation)`  
 -  Delete a file `rm -rf` 
 - used to update like (winget in windows) - `sudo apt-get update` 
 - upgrade kali linux - `sudo apt upgrade` 
