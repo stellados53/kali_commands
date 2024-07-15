@@ -9,7 +9,10 @@
 - prints descrption of a function - `man`
 - create a file directory `mkdir (filename)`
 - copy paste a file or folder `cp (from filelocation) (to filelocation)`  
-- Delete a file `rm -rf` 
+- Delete a file `rm -rf`
+- to find a file in kali linux `find -name <filename>`
+- to find how many lines in the file `wc -l <filename>`
+- to find a term in the file `grep "<term>" <filename>`
 - used to update like (winget in windows) - `sudo apt-get update` 
 - upgrade kali linux - `sudo apt upgrade` 
 - update kali linux - `sudo apt update`
