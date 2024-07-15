@@ -20,7 +20,7 @@
 | update kali linux | `sudo apt update` |
 | run 2 commands concurently |  `ls;pwd` |
 | run the 2nd command directly by neglecting the first commands | `ls (shift+\) pwd` |
-| to access a file directory contains data of something | `cat [file location]`[eg - cat /etc/passwd] |
+| to access a file directory contains data of something | `cat` |
 <h3 align="center"> ... </h3>  
 
 ## check IP address
