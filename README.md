@@ -14,7 +14,8 @@
 | to find a file in kali linux | `find -name <filename>` |
 | to find how many lines in the file | `wc -l <filename>` |
 | to find a term in the file | `grep "<term>" <filename>` |
-| used to update like (winget in windows) | `sudo apt-get update`  |
+| update tools | `sudo apt-get update` |
+| upgrade tools | `sudo apt-get upgrade` |
 | upgrade kali linux | `sudo apt upgrade` | 
 | update kali linux | `sudo apt update` |
 | run 2 commands concurently |  `ls;pwd` |
