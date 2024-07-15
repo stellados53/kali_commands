@@ -18,7 +18,7 @@
 | upgrade tools | `sudo apt-get upgrade` |
 | upgrade kali linux | `sudo apt upgrade` | 
 | update kali linux | `sudo apt update` |
-| run 2 commands concurently |  `ls;pwd` |
+| run 2 commands concurently |  `ls;pwd` or `ls && pwd` |
 | run the 2nd command directly by neglecting the first commands | `ls (shift+\) pwd` |
 | display the contents of the file | `cat` |
 <h3 align="center"> ... </h3>  
