@@ -20,7 +20,7 @@
 | update kali linux | `sudo apt update` |
 | run 2 commands concurently |  `ls;pwd` or `ls && pwd` |
 | run the 2nd command directly by neglecting the first commands | `ls (shift+\) pwd` |
-| display the contents of the file | `cat` |
+| display the contents of the file | `cat <filedirectory>` |
 <h3 align="center"> ... </h3>  
 
 ## check IP address
