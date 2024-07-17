@@ -1,7 +1,7 @@
 
 # kali linux commands
 | usage | command |
-| --- | ---|
+| --- | --- |
 | prints current working directry, uses to redirect to open a file | `pwd`  |
 | list all files | `ls` |
 | list of all files in the directory with details | `ls -l` |
@@ -44,4 +44,35 @@ http://toolbar.netcraft.com/site_report?url=
 https://www.robtex.com/ 
 ```  
 - Using bing.com, search for `ip: [target ip]`
-- <h3 align="center"> ... </h3> 
+<h3 align="center"> ... </h3> 
+
+## Nmap Commands
+> `-sn` is to retrieve only the open ports.
+
+### ARP
+| usage | command |
+| --- | --- |
+| Scan ARP protocol IPs |  `sudo nmap -PR -sn [TARGET (OR) MACHINEIP/24]` <br> `sudo arpscan [TARGET (or) MACHINEIP/24]` |
+
+### ICMP
+
+| usage | command |
+| --- | --- |
+| scans based on TIMESTAMP | `sudo nmap -PP -sn [TARGET (OR) MACHINEIP/24]` |
+| Scans based on ECHO | `sudo nmap -PE -sn [TARGET (OR) MACHINEIP/24]` |
+| Scans based on ADDRESS MARK | `sudo nmap -PM -sn [TARGET (OR) MACHINEIP/24]` |
+
+### TCP AND UDP
+
+> `-p` is to scan only the port number.
+
+| usage | command |
+| --- | --- |
+| TCP for which follows 3way handshake <br> (uprevilaged user[non-root user]) | `sudo nmap -PS -sn [TARGET (OR) MACHINEIP/24 -p80,443,8080,etc]` |
+| TCP doesn't follow 3way handshake <br> (previlaged User[root or sudoer user]) | `sudo nmap -PA -sn [TARGET (OR) MACHINEIP/24]` |
+| UDP Protocols | `sudo nmap -PU -sn [TARGET (OR) MACHINEIP/24]` |
+
+
+
+
+
