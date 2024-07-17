@@ -68,8 +68,8 @@ https://www.robtex.com/
 
 | usage | command |
 | --- | --- |
-| TCP for which follows 3way handshake <br> (uprevilaged user[non-root user]) | `sudo nmap -PS -sn [TARGET (OR) MACHINEIP/24 -p80,443,8080,etc]` |
-| TCP doesn't follow 3way handshake <br> (previlaged User[root or sudoer user]) | `sudo nmap -PA -sn [TARGET (OR) MACHINEIP/24]` |
+| **TCP SYN Ping** <br> TCP for which follows 3way handshake <br> uprevilaged user [non-root user] | `sudo nmap -PS -sn [TARGET (OR) MACHINEIP/24 -p80,443,8080,etc]` |
+| **TCP ACK Ping** <br> TCP doesn't follow 3way handshake <br> previlaged User [root or sudoer user] | `sudo nmap -PA -sn [TARGET (OR) MACHINEIP/24]` |
 | UDP Protocols | `sudo nmap -PU -sn [TARGET (OR) MACHINEIP/24]` |
 
 
