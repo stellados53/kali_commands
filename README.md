@@ -27,11 +27,11 @@
 ## check IP address
 
 
-- to check the information of the target website  
+- to check the information of the TARGETIP website  
 ```
 http://whois.domaintools.com/
 ```
-- to check which techonology is used in target website  
+- to check which techonology is used in TARGETIP website  
 ```
 http://toolbar.netcraft.com/site_report?url=
 ```
@@ -43,7 +43,7 @@ http://toolbar.netcraft.com/site_report?url=
 ```
 https://www.robtex.com/ 
 ```  
-- Using bing.com, search for `ip: [target ip]`
+- Using bing.com, search for `ip: [TARGETIP ip]`
 <h3 align="center"> ... </h3> 
 
 ## Nmap Commands
@@ -52,15 +52,15 @@ https://www.robtex.com/
 ### ARP
 | usage | command |
 | --- | --- |
-| Scan ARP protocol IPs |  `sudo nmap -PR -sn [TARGET (OR) MACHINEIP/24]` <br> `sudo arpscan [TARGET (or) MACHINEIP/24]` |
+| Scan ARP protocol IPs |  `sudo nmap -PR -sn [TARGETIP (OR) MACHINEIP/24]` <br> `sudo arpscan [TARGETIP (OR) MACHINEIP/24]` |
 
 ### ICMP
 
 | usage | command |
 | --- | --- |
-| scans based on TIMESTAMP | `sudo nmap -PP -sn [TARGET (OR) MACHINEIP/24]` |
-| Scans based on ECHO | `sudo nmap -PE -sn [TARGET (OR) MACHINEIP/24]` |
-| Scans based on ADDRESS MARK | `sudo nmap -PM -sn [TARGET (OR) MACHINEIP/24]` |
+| scans based on TIMESTAMP | `sudo nmap -PP -sn [TARGETIP (OR) MACHINEIP/24]` |
+| Scans based on ECHO | `sudo nmap -PE -sn [TARGETIP (OR) MACHINEIP/24]` |
+| Scans based on ADDRESS MARK | `sudo nmap -PM -sn [TARGETIP (OR) MACHINEIP/24]` |
 
 ### TCP AND UDP
 
@@ -68,9 +68,9 @@ https://www.robtex.com/
 
 | usage | command |
 | --- | --- |
-| **TCP SYN Ping** <br> TCP for which follows 3way handshake <br> uprevilaged user [non-root user] | `sudo nmap -PS<80,443,8080,etc> -sn [TARGET (OR) MACHINEIP/24` |
-| **TCP ACK Ping** <br> TCP doesn't follow 3way handshake <br> previlaged User [root or sudoer user] | `sudo nmap -PA -sn [TARGET (OR) MACHINEIP/24]` |
-| UDP Protocols | `sudo nmap -PU -sn [TARGET (OR) MACHINEIP/24]` |
+| **TCP SYN Ping** <br> TCP for which follows 3way handshake <br> uprevilaged user [non-root user] | `sudo nmap -PS<80,443,8080,etc> -sn [TARGETIP (OR) MACHINEIP/24]` |
+| **TCP ACK Ping** <br> TCP doesn't follow 3way handshake <br> previlaged User [root or sudoer user] | `sudo nmap -PA -sn [TARGETIP (OR) MACHINEIP/24]` |
+| UDP Protocols | `sudo nmap -PU -sn [TARGETIP (OR) MACHINEIP/24]` |
 
 
 
