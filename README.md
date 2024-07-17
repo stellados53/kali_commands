@@ -46,33 +46,26 @@ https://www.robtex.com/
 - Using bing.com, search for `ip: [TARGETIP ip]`
 <h3 align="center"> ... </h3> 
 
+
+
 ## Nmap Commands
-> `-sn` is to retrieve only the open ports.
 
-### ARP
-| usage | command |
+| Scan Type |	Example Command |
 | --- | --- |
-| Scan ARP protocol IPs |  `sudo nmap -PR -sn [TARGETIP (OR) MACHINEIP/24]` <br> `sudo arpscan [TARGETIP (OR) MACHINEIP/24]` |
+ | ARP Scan  | 	 `sudo nmap -PR -sn MACHINE_IP/24` | 
+ICMP Echo Scan |  	`sudo nmap -PE -sn MACHINE_IP/24` | 
+ICMP Timestamp Scan |  	`sudo nmap -PP -sn MACHINE_IP/24` | 
+ICMP Address Mask Scan |  	`sudo nmap -PM -sn MACHINE_IP/24` | 
+TCP SYN Ping Scan |  	`sudo nmap -PS22,80,443 -sn MACHINE_IP/30` | 
+TCP ACK Ping Scan |  	`sudo nmap -PA22,80,443 -sn MACHINE_IP/30` | 
+UDP Ping Scan |  	`sudo nmap -PU53,161,162 -sn MACHINE_IP/30` | 
 
-### ICMP
-
-| usage | command |
-| --- | --- |
-| scans based on TIMESTAMP | `sudo nmap -PP -sn [TARGETIP (OR) MACHINEIP/24]` |
-| Scans based on ECHO | `sudo nmap -PE -sn [TARGETIP (OR) MACHINEIP/24]` |
-| Scans based on ADDRESS MARK | `sudo nmap -PM -sn [TARGETIP (OR) MACHINEIP/24]` |
-
-### TCP AND UDP
-
-> `-p` is to scan only the port number.
-
-| usage | command |
-| --- | --- |
-| **TCP SYN Ping** <br> TCP for which follows 3way handshake <br> uprevilaged user [non-root user] | `sudo nmap -PS<80,443,8080,etc> -sn [TARGETIP (OR) MACHINEIP/24]` |
-| **TCP ACK Ping** <br> TCP doesn't follow 3way handshake <br> previlaged User [root or sudoer user] | `sudo nmap -PA -sn [TARGETIP (OR) MACHINEIP/24]` |
-| UDP Protocols | `sudo nmap -PU -sn [TARGETIP (OR) MACHINEIP/24]` |
-
-
+Remember to add `-sn` if you are only interested in host discovery without port-scanning. Omitting `-sn` will let Nmap default to port-scanning the live hosts.
+ | Option |  	Purpose | 
+  | -- | -- | 
+ | -n |  	no DNS lookup | 
+ | -R |  	reverse-DNS lookup for all hosts | 
+ | -sn  | 	host discovery only | 
 
 
 
