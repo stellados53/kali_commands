@@ -67,5 +67,23 @@ Remember to add `-sn` if you are only interested in host discovery without port-
  | -R |  	reverse-DNS lookup for all hosts | 
  | -sn  | 	host discovery only | 
 
+<h3 align="center"> ... </h3> 
 
+
+## HYDRA
+
+- A password cracking tool uses a syntax.
+- For SSH - `sudo hydra -l <username> -P <full path to pass> MACHINE_IP -t 4 ssh`.
+- for HYDRA `sudo hydra -l <username> -P <passlist.txt> ftp://MACHINE_IP`.
+- Mostly the password files are saved in `/usr/share/wordlists/rockyou.txt`.
+
+| Options | Purpose |
+| - | - |
+| -l | identify as username |
+| -P | identify as passcode file directory |
+| -t (optional) | USE threads for the execution |
+| 4 (opt) | No. of threads to be used |
+| ssh | Use ssh and access the target machine |
+
+> After the ssh run the command `ssh <username>@<machineIP>`. this helps to access the target machine.
 
