@@ -46,7 +46,14 @@ https://www.robtex.com/
 - Using bing.com, search for `ip: [TARGETIP ip]`
 <h3 align="center"> ... </h3> 
 
-
+## Content Discovery
+- 3 categories:
+ 1. Manual.
+ 2. Automated.
+ 3.  OSINT (open source intelligence).
+  
+- To find the framework using kali linux `curl <URL> | md5sum`.
+> `curl` - download or upload data to a server via supported protocols such as HTTP, FTP, IMAP, SFTP, TFTP, IMAP, POP3, SCP, etc.
 
 ## Nmap Commands
 
