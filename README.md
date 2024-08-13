@@ -71,6 +71,16 @@ https://www.robtex.com/
 | telnet	| 	`telnet 10.10.255.149 PORT_NUMBER`	| 
 | netcat as client		| `nc 10.10.255.149 PORT_NUMBER`	| 
 | netcat as server	| 	`nc -lvnp PORT_NUMBER`	| 
+
+### netcat commands 
+| netcat attribute | description |
+| - | - |
+| -l | listen mode |
+| -p | specify port |
+| -n | num only ; no resolution of hostname via DNS |
+| -v | verbose output ( useful discover bugs ) |
+| -v | very verbose output(opt) |
+| -k | keep listening after client disconnect |
  
 ## Nmap Commands
 
