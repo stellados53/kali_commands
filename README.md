@@ -81,7 +81,9 @@ https://www.robtex.com/
 | -v | verbose output ( useful discover bugs ) |
 | -v | very verbose output(opt) |
 | -k | keep listening after client disconnect |
- 
+
+<h3 align="center"> ... </h3> 
+
 ## Nmap Commands
 
 | Scan Type |	Example Command |
