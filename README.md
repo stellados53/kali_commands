@@ -179,6 +179,18 @@ These scan types should get you started discovering running TCP and UDP services
 
 <h3 align="center"> ... </h3> 
 
+## protocols and servers
+
+| Protocol | TCP Port | Application(s) | Data Security |
+|----------|----------|----------------|---------------|
+| FTP      | 21       | File Transfer   | Cleartext     |
+| HTTP     | 80       | Worldwide Web   | Cleartext     |
+| IMAP     | 143      | Email (MDA)     | Cleartext     |
+| POP3     | 110      | Email (MDA)     | Cleartext     |
+| SMTP     | 25       | Email (MTA)     | Cleartext     |
+| Telnet   | 23       | Remote Access   | Cleartext     |
+
+<h3 align="center"> ... </h3> 
 
 ## HYDRA
 
