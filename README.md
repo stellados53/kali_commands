@@ -55,6 +55,8 @@ https://www.robtex.com/
 - To find the framework using kali linux `curl <URL> | md5sum`.
 > `curl` - download or upload data to a server via supported protocols such as HTTP, FTP, IMAP, SFTP, TFTP, IMAP, POP3, SCP, etc.
 
+<h3 align="center"> ... </h3> 
+
 ## Active Reconnaisense
 - You can use `traceroute` to map the path to the target.
 > `-c` - give the total routers ip's by stealing with ICMP req b/w sys and target.
