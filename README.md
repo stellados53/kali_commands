@@ -55,6 +55,23 @@ https://www.robtex.com/
 - To find the framework using kali linux `curl <URL> | md5sum`.
 > `curl` - download or upload data to a server via supported protocols such as HTTP, FTP, IMAP, SFTP, TFTP, IMAP, POP3, SCP, etc.
 
+## Active Reconnaisense
+- You can use `traceroute` to map the path to the target.
+> `-c` - give the total routers ip's by stealing with ICMP req b/w sys and target.
+- `ping`  to check if the target system responds to `ICMP` Echo.
+-  `telnet` to check which `ports` are open (UDP) and reachable by attempting to connect to them.
+-  `netcat` give response header (TCP or UDP)
+
+| type | command |
+| - | - |
+| ping |	`ping -c 10 10.10.255.149 on Linux or macOS` |
+| ping |	`ping -n 10 10.10.255.149 on MS Windows` |
+| traceroute |	`traceroute 10.10.255.149 on Linux or macOS` | 
+|tracert	| `tracert 10.10.255.149 on MS Windows`	| 
+| telnet	| 	`telnet 10.10.255.149 PORT_NUMBER`	| 
+| netcat as client		| `nc 10.10.255.149 PORT_NUMBER`	| 
+| netcat as server	| 	`nc -lvnp PORT_NUMBER`	| 
+ 
 ## Nmap Commands
 
 | Scan Type |	Example Command |
