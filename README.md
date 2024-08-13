@@ -169,7 +169,7 @@ These scan types should get you started discovering running TCP and UDP services
 | `-sV--version-all` | try all available probes (9) |
 | `-O` |	detect OS |
 | `--traceroute` |	run traceroute to target |
-| `--script="SCRIPTS"` |	Nmap scripts to run |
+| `--script "SCRIPTS"` |	Nmap scripts to run |
 | `-sC` or `--script=default` |	run default scripts |
 | `-A` |	equivalent to `-sV` `-O` `-sC` `--traceroute` |
 | `-oN` |	save output in normal format |
