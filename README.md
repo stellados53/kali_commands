@@ -111,8 +111,8 @@ Remember to add `-sn` if you are only interested in host discovery without port-
 | Port Scan | Type	Example Command |
 | - | - |
 | TCP Connect Scan |	`nmap -sT MACHINEIP` |
-| TCP SYN Scan	sudo |	 `nmap -sS MACHINEIP` |
-| UDP Scan	sudo  |	`nmap -sU MACHINEIP` |
+| TCP SYN Scan |		`sudo	nmap -sS MACHINEIP` |
+| UDP Scan |		`sudo nmap -sU MACHINEIP` |
 
 These scan types should get you started discovering running TCP and UDP services on a target host.
 
