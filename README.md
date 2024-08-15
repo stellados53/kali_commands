@@ -234,3 +234,15 @@ These scan types should get you started discovering running TCP and UDP services
 | -s PORT           | Use in case of non-default service port number        |
 | -V or -vV         | Show the username and password combinations being tried |
 | -d                | Display debugging output if the verbose output is not helping |
+
+<h3 align="center"> ... </h3> 
+
+## Vulnerability score
+
+| Rating   | Score        |
+|----------|--------------|
+| None     | 0            |
+| Low      | 0.1 - 3.9    |
+| Medium   | 4.0 - 6.9    |
+| High     | 7.0 - 8.9    |
+| Critical | 9.0 - 10.0   |
