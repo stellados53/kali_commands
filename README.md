@@ -217,7 +217,7 @@ These scan types should get you started discovering running TCP and UDP services
 
 - A password cracking tool uses a syntax.
 - For SSH - `sudo hydra -l <username> -P <full path to pass> MACHINE_IP -t 4 ssh`.
-- for HYDRA `sudo hydra -l <username> -P <passlist.txt> ftp://MACHINE_IP`.
+- for HYDRA `sudo hydra -l <username> -P <passlist.txt> ftp://MACHINE_IP:PORT`.
 - Mostly the password files are saved in `/usr/share/wordlists/rockyou.txt`.
 
 > After the ssh run the command `ssh <username>@<machineIP>`. this helps to access the target machine.
