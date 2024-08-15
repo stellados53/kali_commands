@@ -101,9 +101,9 @@ UDP Ping Scan |  	`sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |
 Remember to add `-sn` if you are only interested in host discovery without port-scanning. Omitting `-sn` will let Nmap default to port-scanning the live hosts.
  | Option |  	Purpose | 
   | -- | -- | 
- | -n |  	no DNS lookup | 
- | -R |  	reverse-DNS lookup for all hosts | 
- | -sn  | 	host discovery only | 
+ | `-n` |  	no DNS lookup | 
+ | `-R` |  	reverse-DNS lookup for all hosts | 
+ | `-sn`  | 	host discovery only | 
 
  
 ### NMAP FOR TCP AND UDP
@@ -221,6 +221,8 @@ These scan types should get you started discovering running TCP and UDP services
 - Mostly the password files are saved in `/usr/share/wordlists/rockyou.txt`.
 
 > After the ssh run the command `ssh <username>@<machineIP>`. this helps to access the target machine.
+>
+> to copy a file in `scp <file> username@IP:/home/username ~` from the another server through **ssh**.
 
 | Option            | Explanation                                           |
 |-------------------|-------------------------------------------------------|
