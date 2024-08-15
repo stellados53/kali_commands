@@ -192,6 +192,27 @@ These scan types should get you started discovering running TCP and UDP services
 
 <h3 align="center"> ... </h3> 
 
+## Protocols and Servers
+
+| Protocol | TCP Port | Application(s)                      | Data Security |
+|----------|----------|-------------------------------------|---------------|
+| FTP      | 21       | File Transfer                       | Cleartext     |
+| FTPS     | 990      | File Transfer                       | Encrypted     |
+| HTTP     | 80       | Worldwide Web                       | Cleartext     |
+| HTTPS    | 443      | Worldwide Web                       | Encrypted     |
+| IMAP     | 143      | Email (MDA)                         | Cleartext     |
+| IMAPS    | 993      | Email (MDA)                         | Encrypted     |
+| POP3     | 110      | Email (MDA)                         | Cleartext     |
+| POP3S    | 995      | Email (MDA)                         | Encrypted     |
+| SFTP     | 22       | File Transfer                       | Encrypted     |
+| SSH      | 22       | Remote Access and File Transfer     | Encrypted     |
+| SMTP     | 25       | Email (MTA)                         | Cleartext     |
+| SMTPS    | 465      | Email (MTA)                         | Encrypted     |
+| Telnet   | 23       | Remote Access                       | Cleartext     |
+
+<h3 align="center"> ... </h3> 
+
+
 ## HYDRA
 
 - A password cracking tool uses a syntax.
@@ -199,13 +220,15 @@ These scan types should get you started discovering running TCP and UDP services
 - for HYDRA `sudo hydra -l <username> -P <passlist.txt> ftp://MACHINE_IP`.
 - Mostly the password files are saved in `/usr/share/wordlists/rockyou.txt`.
 
-| Options | Purpose |
-| - | - |
-| -l | identify as username |
-| -P | identify as passcode file directory |
-| -t (optional) | USE threads for the execution |
-| 4 (opt) | No. of threads to be used |
-| ssh | Use ssh and access the target machine |
-
 > After the ssh run the command `ssh <username>@<machineIP>`. this helps to access the target machine.
 
+| Option            | Explanation                                           |
+|-------------------|-------------------------------------------------------|
+| -l username       | Provide the login name                                |
+| -P WordList.txt   | Specify the password list to use `usr/share/wordlists/rockyou.txt` |
+| server service    | Set the server address and service to attack          |
+| -t (optional) | USE threads for the execution |
+| 4 (opt) | No. of threads to be used |
+| -s PORT           | Use in case of non-default service port number        |
+| -V or -vV         | Show the username and password combinations being tried |
+| -d                | Display debugging output if the verbose output is not helping |
