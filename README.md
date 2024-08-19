@@ -353,3 +353,9 @@ The target system’s environment will influence the tool you will be able to us
 - LES (Linux Exploit Suggester): `https://github.com/mzet-/linux-exploit-suggester`
 - Linux Smart Enumeration: `https://github.com/diego-treitos/linux-smart-enumeration`
 - Linux Priv Checker: `https://github.com/linted/linuxprivchecker`
+
+## windows privilege escalation
+
+```
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+```
